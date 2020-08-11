@@ -41,10 +41,11 @@ if (isset($_SESSION['lang']) && !empty(trim($_SESSION['lang']))) {
 
     <div id="progressBar" class="mx-auto mx-5" style="width:600px; height: 100px;"></div>
     
-    <div id="formSteps0" class="m-3 p-3 rounded" style="display: block;">
-        <h1 class="text-light"><?php echo $lang['step'] ?> 1</h1>
+    <div id="formSteps0" class="m-3 p-3 rounded text-light" style="display: block;">
+        <h1><?php echo $lang['step'] ?> 1</h1>
+        <h5>Elige el archivo que quiere compartir</h5>
         <div class="custom-file">
-            <label class="custom-file-label" for="customFile" id="file" data-browse="<?php echo $lang['browse']?>"><?php echo $lang['choose_file'] ?></label>
+            <label class="custom-file-label" for="customFile" id="file" data-browse="<?php echo $lang['browse'] ?>"><?php echo $lang['choose_file'] ?></label>
             <input type="file" class="custom-file-input" id="customFile">
         </div>
         <button class="btn btn-primary mt-3" onclick="step0('formSteps0', 'formSteps1')"><?php echo $lang['next'] ?></button>
