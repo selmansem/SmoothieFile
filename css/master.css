@@ -1,0 +1,12 @@
+body {
+    background-color: #196b8e;
+}
+.footer-div {
+    background-color: #0000005b;
+}
+#formSteps0, #formSteps1, #formSteps2 {
+    background-color: #163c6570;
+}
+.lang-selector {
+    width: 100px !important;
+}
